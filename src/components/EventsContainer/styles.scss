@@ -1,0 +1,144 @@
+@use "../../scss/" as *;
+
+.eventsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subTitleContainer{
+    position: relative;
+    width: 160rem;
+    height: 160rem;
+    
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .subTitle{
+        @include fnt(26, 28, $weight:500);
+        position: absolute;
+        bottom: 40rem;
+        right: -150rem;
+        text-transform: uppercase;
+    }
+}
+
+.containerLogoArrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .containerArrow{
+        display: flex;
+        flex-direction: column;
+        gap: 40rem;
+        width: fit-content;
+
+        .arrowImage{
+            width: 65rem;
+            opacity: .3;
+            cursor: pointer;
+            transition: .3s linear;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.containerEvents{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-top: 160rem;
+
+    .eventsItem{
+        padding-bottom: 25rem;
+        margin-top: 30rem;
+        border-bottom: 1rem solid $gray-300;
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .eventItemTitle{
+            display: flex;
+            align-items: center;
+            gap: 30rem;
+            h3{
+                text-transform: uppercase;
+                @include fnt(16, 22, $weight:700, $color: $blue);
+            }
+            h4{
+                @include fnt(16, 22, $weight:500, $color: $gray-400);
+            }
+        }
+
+        .eventItemDate{
+            @include fnt(16, 22, $weight:500, $color: $gray-400);
+        }
+
+        .eventItemFooter{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                @include fnt(16, 24, $weight:500);
+            }
+            a{
+                @include fnt(16, 24, $weight:500);
+                transition: .2s ease-in-out;
+                width: fit-content;
+    
+                &:hover{
+                    color:$blue
+                }
+            }
+        }
+    }
+}
+
+.eventContainerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .eventModalTipeContainer{
+        display: flex;
+        gap: 28rem;
+    
+        h4{
+            @include fnt(16,22, $weight:700, $color:$blue)
+        }
+        h5{
+            @include fnt(16,22, $weight:500, $color:$gray-400)
+        }
+    }
+
+    .eventAddress{
+        @include fnt(16,22, $weight:500, $color:$gray-400)
+    }
+    .eventDateTime {
+        @include fnt(16,22, $weight:500, $color:$gray-400)
+    }
+
+   
+}
+.containerEventImage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30rem;
+    margin: 50rem 0 80rem;
+
+    img{
+        width: 100%;
+        height: 313rem;
+        object-fit: cover;
+    }
+}

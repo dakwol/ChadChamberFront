@@ -1,0 +1,18 @@
+@use "../../scss/" as *;
+
+.containerPathership{
+    margin-top: 230rem;
+
+    .titlePathership{
+        text-align: center;
+        text-transform: uppercase;
+        @include fnt(26, 27, $weight:500);
+        margin-bottom: 78rem;
+    }
+
+    .imgContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

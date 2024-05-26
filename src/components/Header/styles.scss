@@ -1,0 +1,50 @@
+@use "../../scss/" as *;
+
+.header{
+    width: 100%;
+    margin-top: 56rem;
+
+    .containerHeader{
+        display: grid;
+        grid-template-columns: 1fr 400rem 150rem;
+        width: 100%;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 14rem;
+
+        a{
+            text-transform: uppercase;
+            @include fnt(14, 15, $weight:600);
+            text-align: left;
+            transition: .2s ease-in-out;
+            width: fit-content;
+
+            &:hover{
+                color:$blue
+            }
+        }
+    }
+    a{
+        text-transform: uppercase;
+        @include fnt(14, 15, $weight:600);
+        text-align: right;
+        transition: .2s ease-in-out;
+        width: fit-content;
+        &:hover{
+            color:$blue
+        }
+    }
+}
+
+a{
+    transition: .2s ease-in-out;
+    width: fit-content;
+    cursor: pointer;
+
+    &:hover{
+        color:$blue
+    }
+}

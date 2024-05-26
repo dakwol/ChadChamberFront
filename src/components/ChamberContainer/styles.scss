@@ -1,0 +1,19 @@
+@use "../../scss/" as *;
+
+.ChamberContainer{
+    display: flex;
+    align-items: flex-end;
+    gap: 44rem;
+    margin-top: 36rem;
+
+    h1{
+        @include fnt(55, 58, $weight:400, $color: $blue);
+        display: flex;
+        flex-direction: column;
+
+        b{
+          @include fnt(55, 58, $weight:400, $color: #F29021);
+        }
+    }
+}
+  

@@ -1,0 +1,34 @@
+@use "../../scss/" as *;
+
+.conatinerPagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+    border-top: 1rem solid $gray-200;
+    margin-top: 24rem;
+
+    .conainerButtonPage{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .whiteButton{
+            background-color: $white;
+            color: $gray-600;
+            width: 40rem;
+            height: 40rem;
+
+            &.active{
+                background-color: $gray-50;
+                color: $gray-900;
+            }
+        }
+    }
+
+    .whiteButton{
+        background-color: $white;
+        color: $gray-600;
+        height: 40rem;
+    }
+}

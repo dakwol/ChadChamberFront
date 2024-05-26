@@ -1,0 +1,41 @@
+@use "../../scss/" as *;
+
+.footer{
+   display: grid;
+   grid-template-columns: 530rem 1fr 1fr 1fr;
+   padding-top: 80rem;
+   margin-top: 230rem;
+   border-top: 3rem solid $black;
+   margin-bottom: 130rem;
+
+   .footerLogo{
+     display: flex;
+     align-items: center;
+     gap: 30rem;
+
+     h5{
+        @include fnt(24, 26, $weight: 600, $color: $blue);
+        display: flex;
+        flex-direction: column;
+
+        b{
+          @include fnt(24, 26, $weight: 600, $color: #F29021);
+        }
+     }
+   }
+
+   .containerFlexColumn{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+
+        a{
+            cursor: pointer;
+        }
+   }
+}
+
+.footerInfoText{
+    @include fnt(16, 22, $weight:500, $color: #BABABA);
+    margin-bottom: 50rem;
+}

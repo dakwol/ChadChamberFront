@@ -1,0 +1,31 @@
+@use "../../scss/" as *;
+
+.containerGrid{
+    display: grid;
+    grid-template-columns: 1fr 65%;
+}
+
+.aboutUsContainer{
+    grid-column-start: 2;
+    margin-top: 230rem;
+    h2{
+        @include fnt(24, 26, $weight:500);
+        display: flex;
+        align-items: center;
+
+        &::after{
+            content: '';
+            width: 90%;
+            margin-left: 10rem;
+            height: 3rem;
+            background-color: $black;
+            
+        }
+    }
+
+    .containerText{
+        display: flex;
+        gap: 100rem;
+        margin-top: 80rem;
+    }
+}

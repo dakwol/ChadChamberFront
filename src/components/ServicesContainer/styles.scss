@@ -1,0 +1,85 @@
+@use "../../scss/" as *;
+
+.servicesModalContainer{
+    h1{
+        @include fnt(26, 28, $weight:500);
+        text-transform: uppercase;
+        margin-bottom: 50rem;
+    }
+    h2{
+        @include fnt(22, 28, $weight:500);
+        text-transform: uppercase;
+        margin-bottom: 50rem;
+    }
+    h3{
+        @include fnt(18, 24, $weight:500);
+        text-transform: uppercase;
+        margin-top: 50rem;
+        margin-bottom: 22rem;
+        padding-left: 16rem;
+        border-left: 3rem solid #F29021;
+    }
+}
+
+.servicesContainer{
+
+    margin-top: 230rem;
+    h2{
+        @include fnt(24, 26, $weight:500);
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        &::before{
+            content: '';
+            margin-right: 10rem;
+            width: 53%;
+            height: 3rem;
+            background-color: $black;
+            
+        }
+    }
+
+    .cardServices{
+        display: flex;
+        gap: 128rem;
+        margin-top: 80rem;
+
+        .servicesItem{
+            display: flex;
+            flex-direction: column;
+            gap: 80rem;
+            width: 304rem;
+            h3{
+                @include fnt(60, 81, $weight:400, $color: #F29021);
+            }
+
+            .infoServicesItem{
+                display: flex;
+                flex-direction: column;
+                gap: 30rem;
+               
+                h4{
+                    text-transform: uppercase;
+                    @include fnt(20, 27, $weight:600);
+                }
+                p{
+                    @include fnt(18, 24, $weight:500);
+                   
+                }
+                a{
+                    @include fnt(18, 24, $weight:400);
+                    cursor: pointer;
+                    transition: .2s ease-in-out;
+                    width: fit-content;
+            
+                    &:hover{
+                        color:$blue
+                    }
+                }
+            }
+
+           
+        }
+    }
+}
